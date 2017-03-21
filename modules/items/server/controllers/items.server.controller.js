@@ -39,8 +39,8 @@ exports.read = function (req, res) {
 exports.update = function (req, res) {
   var item = req.item;
 
-  item.title = req.body.title;
-  item.content = req.body.content;
+  item.foodItem = req.body.foodItem;
+  item.price = req.body.price;
 
   item.save(function (err) {
     if (err) {

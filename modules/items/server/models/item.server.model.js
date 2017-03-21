@@ -14,11 +14,11 @@ var ItemSchema = new Schema({
     type: Date,
     default: Date.now
   },
-  item: {
+  foodItem: {
     type: String,
     default: '',
     trim: true,
-    required: 'Item cannot be blank'
+    required: 'Title cannot be blank'
   },
   price: {
     type: String,
