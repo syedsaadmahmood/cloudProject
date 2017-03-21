@@ -33,3 +33,9 @@ a:hover .header-profile-image {
   padding-top: 11px !important;
   padding-bottom: 11px !important;
 }
+.text-center {
+  text-align: center;
+}
+.background-color {
+    background-color: #ff000a;
+}
