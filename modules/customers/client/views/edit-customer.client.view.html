@@ -1,0 +1,40 @@
+<section data-ng-controller="CustomersUpdateController as customerUpCtrl">
+
+  <div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Customer</h3>
+  </div>
+  <div class="modal-body" id="modal-body">
+
+          <form>
+              <fieldset>
+                  <div class="form-group">
+                      <label class="control-label" for="firstName">firstName</label>
+                      <div class="controls">
+                          <input name="firstName" type="text" data-ng-model="customer.firstName" id="firstName" class="form-control" placeholder="firstName">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label" for="number">number</label>
+                      <div class="controls">
+                          <input name="number" data-ng-model="customer.number" id="number" class="form-control" placeholder="number">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="control-label" for="country">country</label>
+                      <div class="controls">
+                          <input name="country" data-ng-model="customer.country" id="country" class="form-control" placeholder="country">
+                      </div>
+                  </div>
+                  <div data-ng-show="error" class="text-danger">
+                      <strong data-ng-bind="error"></strong>
+                  </div>
+              </fieldset>
+          </form>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-success" type="button" ng-click="customerUpCtrl.update(customer); ok()">Update & Close</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+  </div>
+
+</section>
